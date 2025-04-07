@@ -2,7 +2,6 @@
 
 Простой способ сделать локальный Minecraft сервер доступным через ваш VDS без настройки портов и проброса NAT.
 
-![Minecraft TCP Tunnel](https://raw.githubusercontent.com/nntdgrs/minecraft-tcp-tunnel/main/docs/diagram.png)
 
 ## Как это работает?
 
@@ -11,6 +10,7 @@
 3. Клиент подключается к серверу через защищенный туннель
 4. Игроки подключаются к вашему VDS по обычному IP
 5. Весь трафик автоматически туннелируется на ваш локальный сервер
+6. Вам НЕ нужен мощный сервер, достаточно сервера с хорошим интернет соединением
 
 ## Основные возможности
 
@@ -25,7 +25,7 @@
 ### Собрать из исходников
 
 ```bash
-git clone https://github.com/nntdgrs/minecraft-tcp-tunnel.git
+git clone https://github.com/nntdgrss/Minecraft-TCP-Tunnel.git
 cd minecraft-tcp-tunnel
 go build -o bin/server cmd/server/main.go
 go build -o bin/client cmd/client/main.go
